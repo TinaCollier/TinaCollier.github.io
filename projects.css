@@ -104,6 +104,11 @@ h3 {
   
 }
 
+#item-2 .accordion-button {
+  
+    font-family: 'Permanent Marker', cursive;
+}
+
 /* gitHub blurb */
 
 #item-3 {
