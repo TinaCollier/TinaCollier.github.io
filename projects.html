@@ -10,13 +10,22 @@
         <!-- JavaScript Bundle with Popper -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     </header>
-    <body>
-        <div class="bg-container">
+    <body id="layout">
+        <div class="bg-container" id="ShootingStarParams">
             <div class="topnav" id="item-0">
                 <a href="./index.html" target="_blank">HOME</a>
                 <a class="active" href="./index.html">PROJECTS</a>
                 <a href="./TinaCollierResume2022.pdf" target="_blank">RESUME</a>
                 <input type="text" placeholder="Search..">
+
+                <select> 
+                    <option value="" selected="selected">Select</option> 
+                    
+                    <option value="./index.html">HOME</option>
+                    <option value="/">PROJECTS</option> 
+                    <option value="./TinaCollierResume2022.pdf">RESUME</option> 
+
+                  </select>
               </div>
             <div id="item-1">
                 <div class="heading">
@@ -33,7 +42,7 @@
                       </h2>
                       <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                        <img src="./design/PacManGame.png" width="100" height="auto">
+                        <img onmouseover="chomp()" id="img-to-flip" src="./design/PacManGame.png" width="100" height="auto">
                         <strong>This is my PacMen Game.</strong> For this MITxPro coding challenge, we were tasked with creating a game which allowed the player to factory make PacMen using a button. Then, we had to code another button that would make the PacMen move and bounce off the walls. As an extra challenge for myself, I made the PacMen chomp as they moved and face the direction of their movement. I used JavaScript to make my buttons functional, make the PacMen chomp, and face the PacMen in the direction they were moving. Check out my <a href="https://github.com/TinaCollier/PacMenGame" target="_blank">GitHub Repository</a> for this project.
                         </div>
                       </div>
@@ -47,7 +56,7 @@
                       <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
                         <img src="./design/OneEyeExercise.png" width="100" height="auto">
-                          <strong>This is the One Eye Exercise.</strong> For this challenge, MITxPro provided us with an Eye program that followed the cursor around the page. We had to add a second eye and make it function like the first eye. First, I updated the HTML to include a second eye. Then, I adjusted the JavaScript to make the second eye follow the cursor in the same way as the first eye. Check out <a href="https://github.com/TinaCollier/PacMenGame" target="_blank"> this repository</a> on my GitHub. 
+                          <strong>This is the One Eye Exercise.</strong> For this challenge, MITxPro provided us with an Eye program in which an "eye" followed the cursor around the page. We had to add a second eye and make it function the same way. First, I updated the HTML to include a second eye. Then, I adjusted the JavaScript to make the second eye follow the cursor like the first eye. Check out <a href="https://github.com/TinaCollier/PacMenGame" target="_blank"> this repository</a> on my GitHub. 
                         </div>
                       </div>
                     </div>
@@ -84,6 +93,6 @@
                 </ul>
             </footer>
         </div>
-         
+        <script src="./script.js" type="text/javascript"> </script>
     </body>
 </html>
