@@ -19,7 +19,7 @@ html, body {
     background-color: black;
     color: white;
 
-    background-image: linear-gradient(rgb(5, 5, 40), rgba(69, 66, 100, 0.5)), url("nightsky.jpg"); 
+    background-image: linear-gradient(rgb(5, 5, 40), rgba(69, 66, 100, 0.5)), url("./design/nightsky.jpg"); 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -230,5 +230,8 @@ footer a {
     .topnav select { 
         display: inline-block; 
     }
+  }
+  .bg-container {
+      height: 1000px;
   }
 

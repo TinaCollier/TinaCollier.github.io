@@ -17,7 +17,7 @@ html, body {
     background-color: black;
     color: white;
 
-    background-image: linear-gradient(rgb(5, 5, 40), rgba(69, 66, 100, 0.5)), url("nightsky.jpg"); 
+    background-image: linear-gradient(rgb(5, 5, 40), rgba(69, 66, 100, 0.5)), url("./design/nightsky.jpg"); 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -86,23 +86,43 @@ html, body {
 #item-1 {
 
    /* background-color: #385b94; */
-   grid-row-start: 2;
-   grid-column-start: 4;
+    grid-row-start: 2;
+    grid-column-start: 3;
  
-   grid-row-end: 4;
-   grid-column-end: 6;
+    grid-row-end: 4;
+    grid-column-end: 6;
    
-   place-self: center;
-   
+    place-self: center;
+    padding: 20px;
 }
+
+.bioHeader {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bioHeader img {
+    opacity: .9;
+    padding: 10px;
+}
+
+.bioHeader h1 {
+    align-self: flex-end;
+    font-size: 50px;
+}
+
 
 h1 {
     font-family: 'Permanent Marker', cursive;
+
 }
 
 p {
     font-family: 'Joan', serif;
-    font-size: 20px;
+    font-size: 17px;
+    padding-right: 10px;
+    padding-top: 10px;
+    text-align: justify;
 }
 
 .icons {
@@ -111,7 +131,7 @@ p {
     grid-area: auto;
     display: flex;
     justify-content: space-evenly;
-    
+    padding-top: 20px;
 }
 
 
@@ -186,7 +206,7 @@ p {
    grid-column-start: 1;
 
    grid-row-end: 4;
-   grid-column-end: 4;
+   grid-column-end: 3;
    place-self: center;
    
   
@@ -271,6 +291,42 @@ footer a {
 
 /* media */
 
+
+@media screen and (max-width: 1024px) {
+    .bg-container {
+        display: grid;
+        grid-template-rows: 50px 1fr 1fr 100px;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+       
+        gap: 3px;
+        height: 1000px;
+    }
+    #item-2 {
+
+
+        grid-row-start: 2;
+        grid-column-start: 2;
+     
+        grid-row-end: 3;
+        grid-column-end: 5;
+        place-self: center;
+        
+     }
+
+     #item-1 {
+
+
+        grid-row-start: 3;
+        grid-column-start: 1;
+      
+        grid-row-end: 4;
+        grid-column-end: 6;
+        
+        place-self: center;
+        
+     }
+}
+
 @media screen and (max-width: 600px) {
     .topnav a {
         display: none;
@@ -278,4 +334,7 @@ footer a {
     .topnav select { 
         display: inline-block; 
     }
-  }
+    .bg-container {
+        height: 1200px;
+    }
+}
