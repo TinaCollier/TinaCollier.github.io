@@ -1,6 +1,3 @@
-
-
-
 function blink(id) {
     var e = document.getElementById(id);
 
