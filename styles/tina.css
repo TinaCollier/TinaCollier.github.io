@@ -1,0 +1,171 @@
+
+
+body {
+    background-color: #f2f2f2;
+}
+
+.logo {
+    min-width: 30vw;
+    padding: 20px 5px px 0px;
+}
+
+/* Nav bar */
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 14px 16px;
+}
+
+.nav-links a:hover:not(.active) {
+    background-color: rgb(61, 59, 59);
+    color: white;
+}
+  
+.nav-links li a.active {
+
+}
+
+.mobile-nav ul {
+    list-style: none;
+}
+
+.mobile-nav li {
+    display: inline;
+    padding: 0px 5px;
+}
+
+/* Buttons */
+.btn-tinaBlue {
+    background-color: #647C90;
+
+}
+
+/* Bio */
+
+.hero-img {
+    display:table-cell; 
+    vertical-align: middle; 
+    text-align: center;
+}
+
+.b2 {
+    text-align: center;
+}
+
+/* Sections */
+.welcome {
+    font-family: 'Playfair Display', serif;
+    font-size: 2em;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+}
+
+hr {
+    height:3px;
+    border-width:0;
+    background-color:#2c2c2c;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+a {
+    color: #647C90;
+}
+
+a:hover {
+    color: #4E4F50;
+}
+
+h3 a:hover {
+    color: #E2DED0;
+}
+
+.project {
+    width: 100%;
+    margin: 0 auto;
+        word-wrap:break-word;
+}
+
+
+.project_title {
+    font-size: 1.5em;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.project-img img{
+    max-width: 350px;
+    height: auto;
+}
+
+li a {
+    text-decoration: none;
+
+}
+
+.contact {
+    display: flex; 
+    align-items: center;
+    align-content: space-around;
+
+}
+
+.contact ul {
+    list-style: none;
+    padding-left: 0px;
+}
+
+/* Footer */
+.footer-links ul {
+    list-style-type: none;
+}
+
+.icon-links li {
+    display: inline;
+    padding: 0 10px;
+}
+
+@media screen and (max-width: 27em) {
+    .project-img img{
+        max-width: 100%;
+        max-height: 100vh;
+        margin: auto;
+        padding: 10px;
+    }
+
+    h2 {
+        padding-bottom: 0px;
+    }
+    h3 .projects-section { 
+        padding-top: 0px;
+    }
+
+}
+
+@media screen and (max-width: 350px ) {
+
+}
+
